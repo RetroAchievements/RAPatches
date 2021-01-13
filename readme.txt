@@ -1,10 +1,3 @@
-Apply to:
+Patch repo for RetroAchievements.
 
-EarthBound (USA).sfc (No Intro)
-a864b2e5c141d2dec1c4cbed75a42a85
-DC9BB451
-
-Result:
-~Hack~ EarthBound - Halloween.sfc
-3c9a6079146414790ad6712d48ab31a3
-D6076162
+Please open issues for patch requests and/or error reports.
