@@ -1,3 +1,7 @@
+# IMPORTANT NOTE
+
+I'm doing a lot of cleanup and sorting to make this repo easier to navigate. If you come across any broken links in the RA forum, please open an issue here or notify me via Discord @ `televandalist#9495` (2022-05-03)
+
 # RAPatches
 
 Patch repo for RetroAchievements. Intended for back-ups of patch for hacks, translations, subsets, etc. 
