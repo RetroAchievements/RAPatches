@@ -21,21 +21,28 @@ This is a patch repository for RetroAchievements.org. Please open issues for req
 - Patches for translations, bug fixes, etc. should be named after the base ROM with the patch info added. Follow this format (not all tags will be applicable): `[MSU-1]` -> `Title` -> `(Region)` -> `(Base ROM Version)` -> `(Language/Patch Type)` -> `(Patch Author)` -> `(Patch Version)` For example: `ToeJam & Earl (USA, Europe, Korea) (Fr) (sky2048) (0.90).bps`. If something is unknown, then leave it blank. It can always be added later.
 - Languages must be abbreviated as so:
 ```
-En English
-Ja Japanese
-Fr French
-De German
-Es Spanish
-It Italian
-Nl Dutch
-Pt Portuguese
-Sv Swedish
-No Norwegian
-Da Danish
-Fi Finish
-Zh Chinese
-Ko Korean
-Pl Polish
+En - English
+Ja - Japanese
+Fr - French
+De - German
+Es - Spanish
+It - Italian
+Nl - Dutch
+Pt - Portuguese
+Sv - Swedish
+No - Norwegian
+El - Greek
+Da - Danish
+Fi - Finnish
+Zh - Chinese
+Ko - Korean
+Pl - Polish
+Ro - Romanian
+Fl - Filipino
+Ar - Arabic
+Eo - Esperanto
+La - Latin
+Tl - Tagalog
 ```
 ## Compression
 - Patches are then compressed to either .zip or .7z, with those following a `GAMEID-GameTitleWithoutSpaces` naming scheme for linking purposes.
@@ -48,4 +55,8 @@ Pl Polish
 `[ROM file name and extension]`<br>
 `[ROM Checksum]`<br>
 `[CRC Checksum]`
+- For `[ROM Checksum]`, use the MD5 of a file instead of the RA Hash. 
+## Other Info
+- While not required, people will forever remember you as a nice person if you include .cue files with patches for disc-based games. Filenames for .cue files should match the name of the patch.
+
 
