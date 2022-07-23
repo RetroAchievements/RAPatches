@@ -21,28 +21,28 @@ This is a patch repository for RetroAchievements.org. Please open issues for req
 - Patches for translations, bug fixes, etc. should be named after the base ROM with the patch info added. Follow this format (not all tags will be applicable): `[MSU-1]` -> `Title` -> `(Region)` -> `(Base ROM Version)` -> `(Language/Patch Type)` -> `(Patch Author)` -> `(Patch Version)` For example: `ToeJam & Earl (USA, Europe, Korea) (Fr) (sky2048) (0.90).bps`. If something is unknown, then leave it blank. It can always be added later.
 - Languages must be abbreviated as so:
 ```
-En - English
-Ja - Japanese
-Fr - French
-De - German
-Es - Spanish
-It - Italian
-Nl - Dutch
-Pt - Portuguese
-Sv - Swedish
-No - Norwegian
-El - Greek
-Da - Danish
-Fi - Finnish
-Zh - Chinese
-Ko - Korean
-Pl - Polish
-Ro - Romanian
-Fl - Filipino
-Ar - Arabic
-Eo - Esperanto
-La - Latin
-Tl - Tagalog
+En English
+Ja Japanese
+Fr French
+De German
+Es Spanish
+It Italian
+Nl Dutch
+Pt Portuguese
+Sv Swedish
+No Norwegian
+Da Danish
+Fi Finnish
+Zh Chinese
+Ko Korean
+Pl Polish
+El Greek
+Ro Romanian
+Fl Filipino
+Ar Arabic
+Tu Turkish
+Eo Esperanto
+La Latin
 ```
 ## Compression
 - Patches are then compressed to either .zip or .7z, with those following a `GAMEID-GameTitleWithoutSpaces` naming scheme for linking purposes.
