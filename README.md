@@ -32,10 +32,17 @@ Pt Portuguese
 Sv Swedish
 No Norwegian
 Da Danish
-Fi Finish
+Fi Finnish
 Zh Chinese
 Ko Korean
 Pl Polish
+El Greek
+Ro Romanian
+Fl Filipino
+Ar Arabic
+Tu Turkish
+Eo Esperanto
+La Latin
 ```
 ## Compression
 - Patches are then compressed to either .zip or .7z, with those following a `GAMEID-GameTitleWithoutSpaces` naming scheme for linking purposes.
@@ -48,4 +55,8 @@ Pl Polish
 `[ROM file name and extension]`<br>
 `[ROM Checksum]`<br>
 `[CRC Checksum]`
+- For `[ROM Checksum]`, use the MD5 of a file instead of the RA Hash. 
+## Other Info
+- While not required, people will forever remember you as a nice person if you include .cue files with patches for disc-based games. Filenames for .cue files should match the name of the patch.
+
 
