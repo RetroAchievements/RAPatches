@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!DOCTYPE datafile PUBLIC "-//Logiqx//DTD ROM Management Datafile//EN" "http://www.logiqx.com/Dats/datafile.dtd">
+<datafile>
+	<header>
+		<name>Nintendo - Virtual Boy</name>
+		<description>Nintendo - Virtual Boy</description>
+		<version>20220922</version>
+		<author>televandalist</author>
+	</header>
+	<game name="Advanced Pasta Cooking Simulator">
+		<description>Advanced Pasta Cooking Simulator (World) (Aftermarket) (Homebrew).vb</description>
+		<rom name="Advanced Pasta Cooking Simulator (World) (Aftermarket) (Homebrew).vb" md5="a1b32c3b70ad0875fada464d681867f7"/>
+	</game>
+	<game name="Bound High!">
+		<description>Bound High (Japan) (En) (Proto).vb</description>
+		<rom name="Bound High (Japan) (En) (Proto).vb" md5="a460e2660fa951e9d4e3b05aee9f5018"/>
+	</game>
+	<game name="Castle of Doom">
+		<description>Castle Of Doom (World) (Aftermarket) (Homebrew).vb</description>
+		<rom name="Castle Of Doom (World) (Aftermarket) (Homebrew).vb" md5="fcfbeeca4bb33af756b025136c8b2549"/>
+	</game>
+	<game name="Fishbone">
+		<description>Fishbone (World) (v3.0) (Aftermarket) (Homebrew).vb</description>
+		<rom name="Fishbone (World) (v3.0) (Aftermarket) (Homebrew).vb" md5="eee8be03986ddbc3ada91b10a543f17e"/>
+	</game>
+	<game name="Flappy Cheep Cheep">
+		<description>Flappy Cheep Cheep (World) (PVBCC13) (Aftermarket) (Homebrew).vb</description>
+		<rom name="Flappy Cheep Cheep (World) (PVBCC13) (Aftermarket) (Homebrew).vb" md5="2176fae66e175a5bf9fc0266b627cc6f"/>
+	</game>
+	<game name="Galactic Pinball">
+		<description>Galactic Pinball (Japan, USA) (En).vb</description>
+		<rom name="Galactic Pinball (Japan, USA) (En).vb" md5="85260599fdada2e137053a8647aa0d06"/>
+	</game>
+	<game name="Game Hero">
+		<description>Game Hero (World) (Aftermarket) (Homebrew).vb</description>
+		<rom name="Game Hero (World) (Aftermarket) (Homebrew).vb" md5="d7adb3f627d0a3bf058e56eb7bd9c58d"/>
+	</game>
+	<game name="Golf">
+		<description>Golf (USA).vb</description>
+		<rom name="Golf (USA).vb" md5="977c4da800dacfac1a1402781670f872"/>
+	</game>
+	<game name="GoSub">
+		<description>GoSub (World) (Aftermarket) (Homebrew).vb</description>
+		<rom name="GoSub (World) (Aftermarket) (Homebrew).vb" md5="907c7f10093cfcab371754efae8ed279"/>
+	</game>
+	<game name="Hyper Fighting">
+		<description>Hyper Fighting (World) (Aftermarket) (Unl) (Pirate).vb</description>
+		<rom name="Hyper Fighting (World) (Aftermarket) (Unl) (Pirate).vb" md5="c2047a94dcb0db30794c8533ba625622"/>
+	</game>
+	<game name="Innsmouth no Yakata | Innsmouth Mansion">
+		<description>Innsmouth no Yakata (Japan).vb</description>
+		<rom name="Innsmouth no Yakata (Japan).vb" md5="1eb964d0eaa3223cfefdcc99a6265c88"/>
+	</game>
+	<game name="Innsmouth no Yakata | Innsmouth Mansion">
+		<description>Innsmouth no Yakata (Japan) (En) (v1.0) (Thunderstruck).vb</description>
+		<rom name="Innsmouth no Yakata (Japan) (En) (v1.0) (Thunderstruck).vb" md5="4698a0b151d95bbbb833e2a523a12be7"/>
+	</game>
+	<game name="Jack Bros.">
+		<description>Jack Bros. (USA).vb</description>
+		<rom name="Jack Bros. (USA).vb" md5="ee873c9969c15e92ca9a0f689c4ce5ea"/>
+	</game>
+	<game name="Jack Bros.">
+		<description>Jack Bros. no Meiro de Hiihoo! (Japan).vb</description>
+		<rom name="Jack Bros. no Meiro de Hiihoo! (Japan).vb" md5="1b177fe2dd12ec1d67f6a43502f8d391"/>
+	</game>
+	<game name="Jack Bros.">
+		<description>Jack Bros. (USA) (De) (No-Debug) (v1.0) (KR155E,televandalist).vb</description>
+		<rom name="Jack Bros. (USA) (De) (No-Debug) (v1.0) (KR155E,televandalist).vb" md5="05ba60f0ac1aacedd57321f0ed5f62ca"/>
+	</game>
+	<game name="Jack Bros.">
+		<description>Jack Bros. (USA) (Es) (No-Debug) (v1.0) (Max1323,televandalist).vb</description>
+		<rom name="Jack Bros. (USA) (Es) (No-Debug) (v1.0) (Max1323,televandalist).vb" md5="8819d31f9922dc2eea31a051f4d6d667"/>
+	</game>
+	<game name="Mario Clash">
+		<description>Mario Clash (Japan, USA) (En).vb</description>
+		<rom name="Mario Clash (Japan, USA) (En).vb" md5="B1B3A25CE8FB4F406BF82B8765D307D0"/>
+	</game>
+	<game name="Mario Kart: Virtual Cup">
+		<description>Mario Kart Virtual Cup (World) (PVBCC) (Aftermarket) (Homebrew).vb</description>
+		<rom name="Mario Kart Virtual Cup (World) (PVBCC) (Aftermarket) (Homebrew).vb" md5="4b8c8b6a7711a005dd896b3ee9b8d0f1"/>
+	</game>
+	<game name="Mario's Tennis">
+		<description>Mario's Tennis (Japan, USA) (En).vb</description>
+		<rom name="Mario's Tennis (Japan, USA) (En).vb" md5="38ecc2c5a745a80d32eb9e8e413358c4"/>
+	</game>
+	<game name="Nester's Funky Bowling">
+		<description>Nester's Funky Bowling (USA).vb</description>
+		<rom name="Nester's Funky Bowling (USA).vb" md5="0285dc41d75be8419d12472f20025305"/>
+	</game>
+	<game name="Panic Bomber">
+		<description>Panic Bomber (USA).vb</description>
+		<rom name="Panic Bomber (USA).vb" md5="467247d5e3383d066005565bf8218436"/>
+	</game>
+	<game name="Red Alarm">
+		<description>Red Alarm (USA).vb</description>
+		<rom name="Red Alarm (USA).vb" md5="e56e85761f52a613b34079d5322088ce"/>
+	</game>
+	<game name="SD Gundam - Dimension War">
+		<description>SD Gundam - Dimension War (Japan).vb</description>
+		<rom name="SD Gundam - Dimension War (Japan).vb" md5="1cf8c69d8a740d6ef3aab54deced31c4"/>
+	</game>
+	<game name="SD Gundam: Dimension War">
+		<description>SD Gundam - Dimension War (Japan) (En) (v1.0) (Benjamin Stevens, Greg Stevens).vb</description>
+		<rom name="SD Gundam - Dimension War (Japan) (En) (v1.0) (Benjamin Stevens, Greg Stevens).vb" md5="45825104799b74d36740d486f3f0cdf2"/>
+	</game>
+	<game name="Space Invaders: Virtual Collection">
+		<description>Space Invaders - Virtual Collection (Japan).vb</description>
+		<rom name="Space Invaders - Virtual Collection (Japan).vb" md5="7607f6f918615263512b17e56797c9aa"/>
+	</game>
+	<game name="Space Invaders: Virtual Collection">
+		<description>Space Invaders - Virtual Collection (Japan) (En) (v1.0) (Thunderstruck).vb</description>
+		<rom name="Space Invaders - Virtual Collection (Japan) (En) (v1.0) (Thunderstruck).vb" md5="bb4aa9566437572802079c89452666e7"/>
+	</game>
+	<game name="Teleroboxer">
+		<description>Teleroboxer (Japan, USA) (En).vb</description>
+		<rom name="Teleroboxer (Japan, USA) (En).vb" md5="0742a861a599fe3361aac6ebef6745a7"/>
+	</game>
+	<game name="V-Tetris">
+		<description>V-Tetris (Japan).vb</description>
+		<rom name="V-Tetris (Japan).vb" md5="262bbae465f851ded3bb7cf46e375224"/>
+	</game>
+	<game name="VB Racing (FlashBoy Version)">
+		<description>VB Racing (World) (FlashBoy Version) (PVBCC) (Aftermarket) (Homebrew).vb</description>
+		<rom name="VB Racing (World) (FlashBoy Version) (PVBCC) (Aftermarket) (Homebrew).vb" md5="819b9dccf1437c3bb126670b171d7c59"/>
+	</game>
+	<game name="Vertical Force">
+		<description>Vertical Force (USA).vb</description>
+		<rom name="Vertical Force (USA).vb" md5="87c38f66d5b9ead72af22f515a3a5f51"/>
+	</game>
+	<game name="Vertical Force">
+		<description>Vertical Force (USA) (Debug Menu) (v1.0) (Parasyte).vb</description>
+		<rom name="Vertical Force (USA) (Debug Menu) (v1.0) (Parasyte).vb" md5="c1f23aa9a6b5130a4971b4566dc19289"/>
+	</game>
+	<game name="Virtual Bowling">
+		<description>Virtual Bowling (Japan).vb</description>
+		<rom name="Virtual Bowling (Japan).vb" md5="5b11d402f7e322c71a7d4fa6503631fa"/>
+	</game>
+	<game name="Virtual Boy: Wario Land">
+		<description>Virtual Boy Wario Land (Japan, USA) (En).vb</description>
+		<rom name="Virtual Boy Wario Land (Japan, USA) (En).vb" md5="fb4dc9f4ebd506702eb49e99a62bd803"/>
+	</game>
+	<game name="Virtual Fishing">
+		<description>Virtual Fishing (Japan).vb</description>
+		<rom name="Virtual Fishing (Japan).vb" md5="c03e792d8628c3c5729fdcae1620fb9a"/>
+	</game>
+	<game name="Virtual Fishing">
+		<description>Virtual Fishing (Japan) (En) (v1.0) (Benjamin Stevens,Thunderstruck).vb</description>
+		<rom name="Virtual Fishing (Japan) (En) (v1.0) (Benjamin Stevens,Thunderstruck).vb" md5="ef6e68d193dae7eb9f51face69e9dcf9"/>
+	</game>
+	<game name="Virtual Lab">
+		<description>Virtual Lab (Japan).vb</description>
+		<rom name="Virtual Lab (Japan).vb" md5="1cec316aca8827fdf99c685a1ee49dbc"/>
+	</game>
+	<game name="VUE Snake">
+		<description>VUE Snake (World) (v1.1) (Aftermarket) (Homebrew).vb</description>
+		<rom name="VUE Snake (World) (v1.1) (Aftermarket) (Homebrew).vb" md5="ccfa400a0ff3d717dad36a3f736fd34d"/>
+	</game>
+	<game name="Waterworld">
+		<description>Waterworld (USA).vb</description>
+		<rom name="Waterworld (USA).vb" md5="110a83bc070559c5cc5634a8b5cae274"/>
+	</game>
+</datafile>
