@@ -18,7 +18,7 @@ This is a patch repository for RetroAchievements.org. Please open issues for req
 ## Naming Scheme
 - Patches for hacks that have their own RetroAchievements entry do not need a special naming scheme, at least until we come up with one.
 - Patches for Subsets should be named according to their RetroAchivements entry. For example: `Mega Man [Subset - Bonus]`. 
-- Patches for translations, bug fixes, etc. should be named after the base ROM with the patch info added. Follow this format (not all tags will be applicable): `[MSU-1]` -> `Title` -> `(Region)` -> `(Base ROM Version)` -> `(Language/Patch Type)` -> `(Patch Author)` -> `(Patch Version)` For example: `ToeJam & Earl (USA, Europe, Korea) (Fr) (sky2048) (0.90).bps`. If something is unknown, then leave it blank. It can always be added later.
+- Patches for translations, bug fixes, etc. should be named after the base ROM with the patch info added. Follow this format (not all tags will be applicable): `[MSU-1]` -> `Title` -> `(Region)` -> `(Base ROM Version)` -> `(Language/Patch Type)` -> `(Patch Version)` -> `(Patch Author)` For example: `ToeJam & Earl (USA, Europe, Korea) (Fr) (v0.9) (sky2048).bps`. If something is unknown, then leave it blank. It can always be added later.
 - Languages must be abbreviated as so:
 ```
 En English
