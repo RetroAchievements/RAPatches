@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name         RAPatches
 // @namespace    https://retroachievements.org
-// @version      0.4
+// @updateURL    https://raw.githubusercontent.com/RetroAchievements/RAPatches/main/Utilities/rapatches.js
+// @downloadURL  https://raw.githubusercontent.com/RetroAchievements/RAPatches/main/Utilities/rapatches.js
+// @version      0.6
 // @description  Add RAPatches download links to retroachievements.org linked hashes page e.g. https://retroachievements.org/linkedhashes.php?g=19339
 // @author       wholee
 // @match        https://retroachievements.org/linkedhashes.php?g=*
@@ -18,12 +20,12 @@
     const updateInterval = 86400000; // 1 day
     const currentUnixTimestamp = Date.parse(Date(new Date()));
 
-    var RAgitRepo_lastUpdated = localStorage.getItem("RAgitRepo_lastUpdated");
+    var RAgitRepo_lastUpdated = localStorage.getItem('RAgitRepo_lastUpdated');
     var RAgameID = new URLSearchParams(window.location.search).get('g');
 
-    if (localStorage.getItem("RAgitRepo_lastUpdated") === null ||
-        localStorage.getItem("RAgitRepo_lastUpdated") < currentUnixTimestamp - updateInterval ||
-        localStorage.getItem("RAgitRepo_lastUpdated") === 'NaN'){
+    if (localStorage.getItem('RAgitRepo_lastUpdated') === null ||
+        localStorage.getItem('RAgitRepo_lastUpdated') < currentUnixTimestamp - updateInterval ||
+        isNaN(localStorage.getItem('RAgitRepo_lastUpdated'))){
 
         fetch(RAgitRepo)
             .then(res => res.json())
@@ -33,9 +35,10 @@
             localStorage.setItem('RAgitRepo_lastUpdated', currentUnixTimestamp );
         })
             .catch(err => { throw err });
+
     } else {
 
-        injectRAPatches( RAgameID, JSON.parse(localStorage.getItem("RAgitRepo")) );
+        injectRAPatches( RAgameID, JSON.parse(localStorage.getItem('RAgitRepo')) );
 
     }
 
@@ -45,33 +48,25 @@
 
         try{
 
-            if(gameData[gameId] === undefined){
+            var gameDetails = gameData[gameId];
 
-                //para.insertAdjacentHTML( 'afterend', '</br>Patches available at RAPatches: N/A</br>' )
-                // Do nothing for now
+            var injectHTML = '</br><p class="embedded">Patches available at <a href="https://github.com/RetroAchievements/RAPatches">https://github.com/RetroAchievements/RAPatches</a>:</br></br>'
 
-            } else {
+            for (var i = 0; i < gameDetails.length; i++) {
 
-                var injectHTML = '</br><p class="embedded">Patches available at <a href="https://github.com/RetroAchievements/RAPatches">https://github.com/RetroAchievements/RAPatches</a>:</br></br>'
+                var pathArray = gameDetails[i].split('/');
+                var zipName = pathArray[pathArray.length - 1]
 
-                for (var i = 0; i < gameData[gameId].length; i++) {
-
-                    var pathArray = gameData[gameId][i].split('/');
-                    var zipName = pathArray[pathArray.length - 1]
-
-                    injectHTML = injectHTML + '<a href="' + baseLink + gameData[gameId][i] + '">' + zipName + '</a></br>';
-                }
-
-                injectHTML = injectHTML + '</p>';
-                para.insertAdjacentHTML( 'afterend', injectHTML);
-
+                injectHTML = injectHTML + '<a href="' + baseLink + gameDetails[i] + '">' + zipName + '</a></br>';
             }
+
+            injectHTML = injectHTML + '</p>';
+            para.insertAdjacentHTML( 'afterend', injectHTML);
 
         } catch(error) {
 
             //para.insertAdjacentHTML( 'afterend', '</br>RAPatches: N/A</br>' )
             // Do nothing for now
-            alert(error);
 
         }
 
@@ -89,7 +84,7 @@
 
             for (var key in fileObj){
 
-                if(String(fileObj[key]).endsWith('.zip')){
+                if(String(fileObj[key]).endsWith('.zip') || String(fileObj[key]).endsWith('.7z') ){
 
                     // split path to get the gameID
                     var pathArray = fileObj[key].split('/');
