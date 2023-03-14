@@ -43,6 +43,7 @@ La Latin
 ## Compression
 - Patches are then compressed to either .zip or .7z, with those following a `GAMEID-GameTitleWithoutSpaces` naming scheme for linking purposes.
 - Whenever possible, please group similar patches together. If a game has five different Russian translations, we do not need a separate link for each one. Just throw them all into the same .zip/.7z. This applies to language patches as well as patches with various versions.
+- Please... please... stop using WinRAR for submissions. I always have to redo them because even .zips done with WinRAR do not allow editing the contents of the archive, which can happen frequently for some patches.
 ## Readme
 - Be sure to include a readme.txt in the .zip/.7z that states which ROM the patch is intended to be used with.
 - The readme.txt files should follow this format:<br>
