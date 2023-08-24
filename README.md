@@ -8,7 +8,7 @@ This is a patch repository for RetroAchievements.org. Please open issues for req
 
 # Contribution Guidelines
 ## Bases and Formats
-- Patches must be intended to be used with No Intro, Redump, or FinalBurn Neo bases.
+- Patches must be intended to be used with No Intro or Redump bases.
 - Do not submit patches to be used with GoodTools or TOSEC unless there are absolutely no other options. This should only be relevant with very few unlicensed or homebrew games.
 - The majority of patches are and should be in BPS format. IPS is allowed for NES due to headers and xDelta is allowed for larger files. DO NOT use any other format without a very good reason for doing so.
 ## Naming Scheme
