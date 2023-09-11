@@ -3,7 +3,7 @@
 // @namespace    https://retroachievements.org
 // @updateURL    https://raw.githubusercontent.com/RetroAchievements/RAPatches/main/Utilities/rapatches.js
 // @downloadURL  https://raw.githubusercontent.com/RetroAchievements/RAPatches/main/Utilities/rapatches.js
-// @version      0.6
+// @version      0.7
 // @description  Add RAPatches download links to retroachievements.org linked hashes page e.g. https://retroachievements.org/linkedhashes.php?g=19339
 // @author       wholee
 // @match        https://retroachievements.org/linkedhashes.php?g=*
@@ -44,7 +44,7 @@
 
     function injectRAPatches( gameId, gameData ){
 
-        var para = document.querySelector("#fullcontainer > p")
+        var para = document.querySelector("body > div:nth-child(5) > main > article > p")
 
         try{
 
