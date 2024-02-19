@@ -3,10 +3,11 @@
 // @namespace    https://retroachievements.org
 // @updateURL    https://raw.githubusercontent.com/RetroAchievements/RAPatches/main/Utilities/rapatches.js
 // @downloadURL  https://raw.githubusercontent.com/RetroAchievements/RAPatches/main/Utilities/rapatches.js
-// @version      0.7
+// @version      0.8
 // @description  Add RAPatches download links to retroachievements.org linked hashes page e.g. https://retroachievements.org/linkedhashes.php?g=19339
 // @author       wholee
 // @match        https://retroachievements.org/linkedhashes.php?g=*
+// @run-at       document-start
 // @icon         https://static.retroachievements.org/assets/images/favicon.webp
 // @grant        none
 // ==/UserScript==
@@ -14,37 +15,39 @@
 (function() {
     'use strict';
 
-    const RAgitRepo = 'https://api.github.com/repos/televandalist/RAPatches/git/trees/main?recursive=1';
+    const RAgitRepo = 'https://api.github.com/repos/RetroAchievements/RAPatches/git/trees/main?recursive=1';
     const baseLink = 'https://github.com/RetroAchievements/RAPatches/raw/main/';
 
     const updateInterval = 86400000; // 1 day
-    const currentUnixTimestamp = Date.parse(Date(new Date()));
+    const currentUnixTimestamp = Date.now();
 
     var RAgitRepo_lastUpdated = localStorage.getItem('RAgitRepo_lastUpdated');
     var RAgameID = new URLSearchParams(window.location.search).get('g');
 
-    if (localStorage.getItem('RAgitRepo_lastUpdated') === null ||
-        localStorage.getItem('RAgitRepo_lastUpdated') < currentUnixTimestamp - updateInterval ||
-        isNaN(localStorage.getItem('RAgitRepo_lastUpdated'))){
+    var repoJsonPromise;
+    if (RAgitRepo_lastUpdated === null || isNaN(RAgitRepo_lastUpdated) ||
+        RAgitRepo_lastUpdated < currentUnixTimestamp - updateInterval) {
 
-        fetch(RAgitRepo)
+        repoJsonPromise = fetch(RAgitRepo)
             .then(res => res.json())
-            .then(out => {
-            injectRAPatches( RAgameID, getGameIdAndPath(out) );
-            localStorage.setItem('RAgitRepo', JSON.stringify(getGameIdAndPath(out)));
-            localStorage.setItem('RAgitRepo_lastUpdated', currentUnixTimestamp );
-        })
-            .catch(err => { throw err });
-
+            .then(json => {
+                const out = getGameIdAndPath(json);
+                localStorage.setItem('RAgitRepo', JSON.stringify(out));
+                localStorage.setItem('RAgitRepo_lastUpdated', currentUnixTimestamp);
+                return out;
+            });
     } else {
-
-        injectRAPatches( RAgameID, JSON.parse(localStorage.getItem('RAgitRepo')) );
-
+        repoJsonPromise = Promise.resolve(JSON.parse(localStorage.getItem('RAgitRepo')));
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        repoJsonPromise.then(json => injectRAPatches(RAgameID, json))
+            .catch(err => { throw err });;
+    });
 
     function injectRAPatches( gameId, gameData ){
 
-        var para = document.querySelector("body > div:nth-child(5) > main > article > p")
+        var para = document.querySelector("main article > p");
 
         try{
 
@@ -55,7 +58,7 @@
             for (var i = 0; i < gameDetails.length; i++) {
 
                 var pathArray = gameDetails[i].split('/');
-                var zipName = pathArray[pathArray.length - 1]
+                var zipName = pathArray[pathArray.length - 1];
 
                 injectHTML = injectHTML + '<a href="' + baseLink + gameDetails[i] + '">' + zipName + '</a></br>';
             }
@@ -88,14 +91,14 @@
 
                     // split path to get the gameID
                     var pathArray = fileObj[key].split('/');
-                    var zipName = pathArray[pathArray.length - 1]
+                    var zipName = pathArray[pathArray.length - 1];
 
                     var splitZipNameArray = zipName.split('-');
                     var gameId = splitZipNameArray[0];
 
                     if(gameIdAndPathList[gameId] === undefined){
 
-                        var files = []
+                        var files = [];
                         files.push(fileObj[key]);
                         gameIdAndPathList[gameId] = files;
 
