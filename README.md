@@ -66,7 +66,7 @@ The following table shows the preferred base and format for each of RA's support
 - Please do not submit patches to be used with `GoodTools` or `TOSEC` bases unless there are absolutely no other options. This should only be relevant with very few unlicensed or homebrew games, but even those are quickly becoming DAT'd by `No Intro`.
 - Sometimes, patches have their own patchers. Please avoid these unless they're actually necessary. A good example are the patchers that are commonly used with Dreamcast patches.
 - Patches that are over 100MB currently cannot be added to the repo. I'm open to options that will bypass this.
-## Naming Scheme
+## Naming Convention
 - Patches for subsets should be named according to their RetroAchivements entry. For example:
     - `Mega Man [Subset - Bonus].ips`
 - Patches for translations, bug fixes, etc. should be named after the base ROM's name and region with the patch info added. If the base ROM has languages included in the name, these should be omitted since it'll make translation patches a bit confusing. Follow this format (not all tags will be applicable): `Title` -> `(Region)` -> `(Base ROM Version)` -> `(Language/Patch Type)` -> `(Patch Version)` -> `(Patch Author)` For example:
@@ -80,7 +80,7 @@ The following table shows the preferred base and format for each of RA's support
     - `Sonic 1 - Jester's Challenge (v1.0) (MarkeyJester).bps`
     - `Sonic 3 & Knuckles - Hellfire Saga (v2.0) (Red Miso Studios).bps`
         - `S3&K - Hellfire Saga (v2.0) (Red Miso Studios).bps` is also acceptable
-- Languages must be abbreviated as so:
+- Languages use [ISO 639 codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (Set 1 with the first letter capitalized). A few examples:
 ```
 En English
 Ja Japanese
@@ -90,26 +90,16 @@ Es Spanish
 It Italian
 Nl Dutch
 Pt Portuguese
-Sv Swedish
-No Norwegian
-Da Danish
-Fi Finnish
-Zh Chinese
-Ko Korean
-Pl Polish
-El Greek
-Ro Romanian
-Fl Filipino
-Ar Arabic
-Tu Turkish
-Eo Esperanto
-La Latin
 ```
-- Version number should be formatted as such: `(v1.4)`.
+- Version number should be formatted as such: `(v1.4)`, `(v1.4.1)`, `(v2.3a)`, etc.
     - If a version number isn't available, then a patch date `(YearMonthDay)` will also work: `(v20240120)`.
     - If a version number and patch date are unavailable, but the patch is listed as "Final", "Alpha", "Beta", etc., use those.
-    - If you don't know the version number or author, then skip them or put `(Unknown)`.
-- If something is unknown, then leave it blank. It can always be added later.
+    - If you don't know the version number, then skip it. It's better to have missing info than inaccurate info.
+      - If there are multiple patches with unknown version numbers, skip it for the first one and use `(Alt 1)`, `(Alt 2)`, etc. for subsequent versions.
+- Author name(s) should be whoever released the patch.
+  - If the author is unknown, then use `(Unknown)` instead of skipping it.
+  - If multiple authors are credited, see if there's a team name. You can list multiple authors, but try not to get carried away. Worst case scenario is you can provide more info in the readme.
+  - Abbreviation is your call, but sometimes it's necessary to keep the character count in the filename down. `(Aeon Genesis)` and `(AGTP)` are both preferable to `(Aeon Genesis Translation Project)`.
 
 ## Compression
 - Patches are then compressed to either .zip or .7z, with those following a `GAMEID-GameTitleWithoutSpaces` naming scheme for linking purposes.
