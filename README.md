@@ -1,9 +1,8 @@
 # RAPatches
 This is a patch repository for RetroAchievements.org. Please open issues for requests and/or error reports. However, please **do not** make hash-linking requests here; patches in this repo are for hashes that have already been linked.
 
-# Goals
+# Goal
 - Provide patch back-ups for various hacks, translations, subsets, bug fixes, etc. This includes older versions or abandoned projects where the patches are no longer publicly available.
-- Eliminate the need for referencing GoodTools. It hasn't been updated in years and needs to be phased out.
 
 # Contribution Guidelines
 ## Bases and Formats
