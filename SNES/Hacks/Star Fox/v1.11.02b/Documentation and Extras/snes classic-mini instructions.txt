@@ -1,0 +1,4 @@
+for Canoe on a SNES Classic:
+use Preset ID 123E (press ctrl+alt+E in Hakchi)
+use command line options:
+-boost-fx 4 -no-lowlatency or even faster -boost-fx 8 -no-lowlatency
