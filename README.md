@@ -62,8 +62,8 @@ The following table shows the preferred base and format for each of RA's support
 |Watara - Supervision|No Intro|BPS|
 |Wellback - Mega Duck|No Intro|BPS|
 
-- Please do not submit patches to be used with `GoodTools` or `TOSEC` bases unless there are absolutely no other options. This should only be relevant with very few unlicensed or homebrew games, but even those are quickly becoming DAT'd by `No Intro`.
-- Sometimes, patches have their own patchers. Please avoid these unless they're actually necessary. A good example are the patchers that are commonly used with Dreamcast patches.
+- Please do not submit patches to be used with `GoodTools` or `NonGood` bases unless there are absolutely no other options. This should only be relevant with very few unlicensed or homebrew games, but even those are quickly becoming DAT'd by `No Intro`.
+- Sometimes, patches have their own patchers. Please avoid these unless a separate patch ends up exceeding 100MB, but the patcher does not.
 - Patches that are over 100MB currently cannot be added to the repo. I'm open to options that will bypass this.
 ## Naming Convention
 - Patches for subsets should be named according to their RetroAchivements entry. For example:
@@ -118,5 +118,6 @@ Pt Portuguese
     - [RapidCRC](https://rapidcrc.sourceforge.net/)
 ## Other Info
 - While not required, people will forever remember you as a nice person if you include `.cue` files with patches for disc-based games. Filenames for `.cue` files should match the name of the patch. Same goes for `.m3u` files.
+
 
 
