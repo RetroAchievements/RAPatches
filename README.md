@@ -45,7 +45,7 @@ The following table shows the preferred base and format for each of RA's support
 |Nintendo - Virtual Boy|No Intro|BPS|
 |Panasonic - 3DO|Redump<br>No Intro's Non-Redump DAT|xDelta<br>64-Bit BPS|
 |Sega - 32X|No Intro|BPS|
-|Sega - Dreamcast|Redump<br>No Intro's Non-Redump DAT|xDelta<br>64-Bit BPS|
+|Sega - Dreamcast|Redump<br>No Intro's Non-Redump DAT|xDelta<br>64-Bit BPS<br>Universal Dreamcast Patch|
 |Sega - Game Gear|No Intro|BPS|
 |Sega - Master System|No Intro|BPS|
 |Sega - Mega Drive - Genesis|No Intro|BPS|
